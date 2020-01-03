@@ -1,0 +1,15 @@
+name "Sketchup Importer Helper"
+description "Corrige a geometria de objetos importados do Sketchup"
+version 1
+
+copy *.mcr to "$userScripts\Juninho\"
+copy *.ms to "$userScripts\Juninho\"
+
+
+copy icons\*.bmp to "$userIcons\"
+
+
+drop "$userScripts\Juninho\SketchupImporterHelper_Install.mcr"
+run "$userScripts\Juninho\SketchupImporterHelper_Install.mcr"
+
+clear temp on MAX exit
